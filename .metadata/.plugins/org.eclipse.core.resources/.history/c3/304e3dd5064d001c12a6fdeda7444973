@@ -1,0 +1,13 @@
+package com.xworkz.cctv.main;
+
+import com.xworkz.cctv.cctventity.CCTVEntity;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		CCTVEntity cctv=new CCTVEntity();
+		System.out.println("i m in tester");
+
+	}
+
+}
