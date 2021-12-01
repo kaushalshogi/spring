@@ -5,6 +5,11 @@ public class CCTVEntity {
 	private String color;
 	private double prize;
 	private int cameraSize;
+	
+	public CCTVEntity(String brand) {
+		super();
+		this.brand = brand;
+	}
 
 	public CCTVEntity() {
 		super();

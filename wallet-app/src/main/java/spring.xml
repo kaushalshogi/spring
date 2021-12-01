@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+<!--  
+ <bean id="wallet1" class="com.workz.wallet.Wallet" scope="prototype">
+	    <property name="brand" value="mi"></property>
+	    <property name="color" value="red"></property>
+		<property name="price" value="2000"></property>
+		<property name="material" ref="material"></property>
+		<property name="money" ref="money"></property>
+		<property name="atmcard" ref="atmcard"></property>
+		<property name="photo" ref="photo"></property>
+	</bean>
+	-->
+	
+	<bean id="wallet" class="com.workz.wallet.Wallet" scope="prototype" >
+	<constructor-arg name="brand" value="puma"></constructor-arg>
+	<constructor-arg name="color" value="white"></constructor-arg>
+	<constructor-arg name="price" value="3000"></constructor-arg>
+	<constructor-arg name="material" ref="material"></constructor-arg>
+	<constructor-arg name="money" ref="money"></constructor-arg>
+	<constructor-arg name="atmcard" ref="atmcard"></constructor-arg>
+	<constructor-arg name="photo" ref="photo"></constructor-arg>
+	</bean>
+	
+	<bean class="com.workz.wallet.Material" id="material" >
+	<constructor-arg name="brand" value="synthetic"></constructor-arg>
+	<constructor-arg name="color" value="red"></constructor-arg>
+	<constructor-arg name="price" value="300"></constructor-arg></bean>
+	
+	<bean class="com.workz.wallet.Money" id="money"></bean>
+
+	<bean class="com.workz.wallet.ATMCard" id="atmcard"></bean>
+
+	<bean class="com.workz.wallet.Photo" id="photo"></bean>
+
+
+
+
+</beans>

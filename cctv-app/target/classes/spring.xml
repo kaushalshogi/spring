@@ -3,4 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.xworkz.cctv.cctventity.CCTVEntity" id="cCTV">
+		<property name="brand" value="mi"></property>
+		<property name="color" value="red"></property>
+		<property name="prize" value="2000"></property>
+	</bean>
+
+	
+	
+
 </beans>
