@@ -7,14 +7,4 @@ public class Material {
 	public Material() {
 		System.out.println("wallet class");
 	}
-	public Material(String brand, String color, double price) {
-		super();
-		this.brand = brand;
-		this.color = color;
-		this.price = price;
-	}
-
-	
-	
-
 }
