@@ -6,12 +6,12 @@
 
 	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="location" value="photo.properties"></property>
+		<property name="locations" value="photo.properties"></property>
 	</bean>
 
-	<bean class="com.workz.wallet.Photo" id="photo">
+	<bean class="com.workz.wallet.Photo1">
+		<constructor-arg name="pType" value="${type}"></constructor-arg>
 		<constructor-arg name="pPrize" value="${price}"></constructor-arg>
-		<constructor-arg name="pSize" value="${photoSize}"></constructor-arg>
 	</bean>
 
 	<!-- <bean id="wallet1" class="com.workz.wallet.Wallet" scope="prototype"> 

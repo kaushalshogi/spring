@@ -4,7 +4,7 @@ public class CCTVEntity {
 	private String brand;
 	private String color;
 	private double prize;
-	private int cameraSize;
+	private Camera cameraSize;
 	
 	public CCTVEntity(String brand) {
 		super();
@@ -39,13 +39,15 @@ public class CCTVEntity {
 		this.prize = prize;
 	}
 
-	public int getCameraSize() {
+	public Camera getCameraSize() {
 		return cameraSize;
 	}
 
-	public void setCameraSize(int cameraSize) {
+	public void setCameraSize(Camera cameraSize) {
 		this.cameraSize = cameraSize;
 	}
+
+	
 	
 	
 

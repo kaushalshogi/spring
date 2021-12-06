@@ -8,14 +8,14 @@ public class Wallet {
 	private double price;
 	private Money money;
 	private ATMCard atmcard;
-	private Photo photo;
+	private Photo1 photo1;
 
 	public Wallet() {
 		super();
 	}
 
 	public Wallet(String brand, String color, Material material, double price, Money money, ATMCard atmcard,
-			Photo photo) {
+			Photo1 photo1) {
 		super();
 		this.brand = brand;
 		this.color = color;
@@ -23,7 +23,7 @@ public class Wallet {
 		this.price = price;
 		this.money = money;
 		this.atmcard = atmcard;
-		this.photo = photo;
+		this.photo1 = photo1;
 	}
 
 	public String getBrand() {
@@ -74,12 +74,12 @@ public class Wallet {
 		this.atmcard = atmcard;
 	}
 
-	public Photo getPhoto() {
-		return photo;
+	public Photo1 getPhoto1() {
+		return photo1;
 	}
 
-	public void setPhoto(Photo photo) {
-		this.photo = photo;
+	public void setPhoto1(Photo1 photo1) {
+		this.photo1 = photo1;
 	}
 
 }

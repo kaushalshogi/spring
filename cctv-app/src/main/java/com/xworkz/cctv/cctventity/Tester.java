@@ -15,6 +15,11 @@ public class Tester {
 		System.out.println(cctv.getBrand());
 		System.out.println(cctv.getColor());
 		System.out.println(cctv.getPrize());
+		System.out.println(cctv.getCameraSize());
+		
+		Camera c= springContainer.getBean(Camera.class);
+		System.out.println(c.getBrand());
+		System.out.println(c.getPrice());
 		
 		
 	

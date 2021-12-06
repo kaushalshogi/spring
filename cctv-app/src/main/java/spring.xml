@@ -8,6 +8,15 @@
 		<property name="brand" value="mi"></property>
 		<property name="color" value="red"></property>
 		<property name="prize" value="2000"></property>
+		<property name="cameraSize" ref="camera"></property>
+	</bean>
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	<property name="location" value="camera.properties"></property>
+	</bean>
+	<bean class="com.xworkz.cctv.cctventity.Camera" id="camera">
+	<constructor-arg name="brand" value="${brand}"></constructor-arg>
+	<constructor-arg name="price" value="${price}"></constructor-arg>
+	
 	</bean>
 
 	

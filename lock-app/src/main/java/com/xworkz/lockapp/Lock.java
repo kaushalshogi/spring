@@ -1,11 +1,24 @@
 package com.xworkz.lockapp;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Lock {
 	
+	@Value("uropa")
 	private String brand;
+	
 	private String color;
+	
+	@Autowired
 	private Material material;
+	
+	@Value("200")
 	private double price;
+	
+	@Autowired
 	private Key key;
 	
 	public Lock() {
@@ -22,12 +35,16 @@ public class Lock {
 	public String getBrand() {
 		return brand;
 	}
+	
+
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
 	public String getColor() {
 		return color;
 	}
+	
+	@Value("silevr")
 	public void setColor(String color) {
 		this.color = color;
 	}

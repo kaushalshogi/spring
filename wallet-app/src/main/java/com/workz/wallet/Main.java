@@ -14,7 +14,7 @@ public class Main {
 		//Wallet w1= new Wallet();
 		//w1.setAtmcard(null);
 		
-		Photo photo=springContainer.getBean(Photo.class);
+		Photo1 photo=springContainer.getBean(Photo1.class);
 	    System.out.println(photo);
 	
 		
